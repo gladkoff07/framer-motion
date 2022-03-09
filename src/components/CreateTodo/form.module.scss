@@ -1,0 +1,51 @@
+.form {
+  height: 63px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+
+  &__input {
+    height: 100%;
+    width: calc(100% - 150px);
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    color: #123;
+    font-size: 18px;
+    transition: all 0.3s ease-out;
+    outline: none;
+
+    &::-webkit-input-placeholder {
+      color: #123;
+      font-size: 18px;
+    }
+    &:-moz-placeholder {
+      color: #123;
+      font-size: 18px;
+    }
+    &::-moz-placeholder {
+      color: #123;
+      font-size: 18px;
+    }
+    &:-ms-input-placeholder {
+      color: #123;
+      font-size: 18px;
+    }
+  }
+
+  &__submit {
+    height: 100%;
+    padding: 0 30px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    border-radius: 7px;
+    cursor: pointer;
+    color: #123;
+    font-size: 18px;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
+    }
+  }
+}
